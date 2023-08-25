@@ -1,0 +1,69 @@
+
+.event_img{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.date{
+    font-size: $font-size-lg;
+    line-height: 1.2;
+}
+.time{
+    font-size: $font-size-base;
+    line-height: 1.2;
+}
+
+.slash{
+    transform: rotate(30deg);
+    height: 51.02%;
+        // transform: scale(2);
+}
+.tagBox{
+    display: none;
+}
+.table{
+    thead{
+
+        th{
+            padding: 0;
+        }
+    }
+
+    tbody{
+        font-size: $font-size-sm;
+        td{
+            padding:0;
+        }
+    }
+}
+
+@media(min-width:992px){
+    .table{
+        tbody{
+            font-size: $font-size-base;
+        }
+        button{
+            &::before{
+                    content: '立即';
+            }
+        }
+
+    }
+    .date{
+        font-size: $font-size-base*3;
+    }
+    .time{
+        font-size: $font-size-base*2;
+    }
+    .slash{
+        transform: rotate(120deg);
+        width: 51.02%;
+        // transform: scale(2);
+    }
+    .tagBox{
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+
+*, *::before, *::after {
+    // outline: 1px solid red;
+    box-sizing:border-box;
+    // font-family: 'Yeseva One', cursive;
+    // font-family: 'Noto Serif TC', serif;
+    // font-family: 'Noto Sans TC', sans-serif;
+    
+}
+body{
+    letter-spacing: 0px;
+    a{
+        display: block;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.font-style-1{
+    font-family: 'Noto Serif TC', serif;
+}
+.font-style-2{
+    font-family: 'Noto Sans TC', sans-serif;
+}

@@ -1,0 +1,132 @@
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;//***
+}
+.banner-text{
+  p{
+    display: none;
+  }
+}
+.select{
+  img{
+    width: 37.03%;
+  }
+}
+.event_card{
+  max-height: 584px;
+  display: flex;
+  flex-direction: column;
+  h3{
+    font-family: 'Yeseva One', cursive;
+  }
+  .card_body{
+    flex-grow:1;
+    font-family: 'Noto Sans TC', sans-serif;
+
+  }
+  .card_footer{
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.card_img_area{
+  img{
+
+    object-fit: cover;
+  }
+
+}
+.tag{
+  top: -16px;
+  z-index: 3;
+}
+.online_event{
+  button{
+    border-width:1px 1px 1px 4px ;
+    border-color: rgba(0, 0, 0, 1);
+  }
+}
+.online_event_area{
+    img{
+      object-fit: cover;
+    }
+}
+.scroll{
+  min-height: 56px;
+  .text{
+    font-size: $font-size-base;
+    white-space: nowrap;
+  
+  animation: scroll 40s linear infinite;
+  &:nth-child(2){
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+  }
+  
+  }
+}
+
+@keyframes scroll{
+  from{transform: translateX(100%)}
+  to{transform: translateX(-100%)}
+}
+
+@keyframes scroll2{
+  from{transform: translateX(0%)}
+  to{transform: translateX(-200%)}
+}
+.albums_img_box{
+  img{
+    object-fit: cover;
+  }
+
+}
+
+.rotated-1{
+  transform: rotate(-2deg); 
+}
+.rotated-2{
+  transform: rotate(2deg);
+}
+.rotated-3{
+  transform: rotate(-4deg); 
+}
+.pc-text1{
+  display: none;
+}
+.mobile-text1{
+  font-size: $font-size-sm;
+}
+@media(min-width:768px){
+  .mobile-text1{
+    display: none;
+  }
+  .pc-text1{
+    display: block;
+  }
+  .banner-text{
+    p{
+      display: block;
+    }
+  }
+  .event_card{
+    .card_footer{
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+  }
+  .scroll{
+    min-height: 96px;
+    .text{
+      font-size: $font-size-base*2;
+    }
+  }
+}
+

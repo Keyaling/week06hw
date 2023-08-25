@@ -1,0 +1,12 @@
+.stepBox{
+    min-width: 32px;
+    min-height: 32px;
+    font-size: $font-size-base;
+}
+@media(min-width:992px){
+    .stepBox{
+        min-width: 48px;
+        min-height: 48px;
+        font-size: $font-size-base*1.25;
+    }
+}

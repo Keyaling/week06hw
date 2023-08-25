@@ -1,0 +1,37 @@
+.logo_img{
+    width: 47%;
+}
+h1{
+    display: none;
+}
+.nav-item{
+    display:none;
+}
+
+.list-btn{
+    display: block;
+}
+.searchBox{
+    .btn{
+        padding: 12px;
+        line-height: 1;
+    }
+}
+@media(min-width:768px){
+    .logo_img{
+        width: 17%;
+    }
+    h1{
+        display: block;
+    }
+    ul{
+        .nav-item{
+            display:block;
+        }
+    }
+
+    .list-btn{
+        display: none;
+    }
+
+}

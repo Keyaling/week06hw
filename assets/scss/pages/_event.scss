@@ -1,0 +1,26 @@
+.tagBox{
+    button{
+        border-width:1px 1px 1px 4px ;
+        border-color: rgba(0, 0, 0, 1);
+        font-size: $font-size-sm;
+    }
+}
+.page-item{
+
+    .page-link{
+        background-color: $primary;
+        &:hover{
+            color: $warning;
+            background-color: black;
+        }
+
+    }
+}
+@media(min-width:992px){
+    .tagBox{
+        button{
+            font-size: $font-size-base;
+        }
+    }
+    
+}
