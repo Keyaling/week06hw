@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>payment</title>
-  <script type="module" crossorigin src="/week06hw/assets/main-c2eaa423.js"></script>
-  <link rel="stylesheet" href="/week06hw/assets/main-a066568f.css">
+  <script type="module" crossorigin src="/week06hw/assets/main-90e8353d.js"></script>
+  <link rel="stylesheet" href="/week06hw/assets/main-610e75e8.css">
 </head>
 <body class="bg-primary text-dark">
     <div class="header py-4 border-bottom border-2 mb-4 mb-lg-6">
@@ -37,7 +37,7 @@
 </div>    <div class="container mt-2 mt-lg-5">
       <div class="row row-cols-1 justify-content-center pt-lg-1">
         <div class="col col-lg-6">
-          <div class="d-flex justify-content-between mb-6 mb-lg-7">
+          <!-- <div class="d-flex justify-content-between mb-6 mb-lg-7">
               <div class="d-flex flex-column align-items-center">
                 <div class="py-2 px-4 bg-dark text-warning mb-1 mb-lg-2">1</div>
                 <p>訂單確認</p>
@@ -50,33 +50,72 @@
                 <div class="py-2 px-4 bg-primary text-dark mb-1 mb-lg-2 border border-1">3</div>
                 <p>訂購結果</p>
               </div>
+            </div> -->
+            <div class="progressBox d-flex align-items-center  mb-2 px-3 px-lg-2">
+              <div class="stepBox bg-dark border d-flex  justify-content-center align-items-center">
+                <i class="icofont-verification-check text-warning "></i>
+              </div>
+              <div class="w-100">
+                <div class="border border-1 border-dark w-100"></div>
+              </div>
+              <div class="stepBox bg-dark border d-flex  justify-content-center align-items-center ">
+                <div class="   text-warning  ">2</div>
+              </div>
+              <div class="w-100">
+                <div class="border border-1 border-dark w-100"></div>
+              </div>
+              <div class="stepBox border d-flex  justify-content-center align-items-center ">
+                <div class="  text-dark  bg-primary font-style-1 fw-bold">3</div>
+              </div>
+
+            </div>
+            <div class="progressBox_text d-flex align-items-center justify-content-between fw-bold mb-6 mb-lg-7">
+              <p>訂單確認</p>
+              <p>結帳付款</p>
+              <p>訂購結果</p>
             </div>
             <h2 class="fs-xl text-center fw-bold mb-5 mb-lg-6">返老還童-制服聯誼</h2>
-            <p class="bg-dark text-warning">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+            <div class="bg-dark text-warning text-center mb-5 mb-lg-6 p-2 fs-6 font-style-2 mx-lg-n3">
+              <p class=" mx-lg-n3">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+
+            </div>
 
           <table class="table table-hover mb-6 mb-lg-7">
               <tr class="border-top border-2">
-                <th scope="row">訂單編號</th>
-                <td class="text-end font-style-2">892746123</td>
+                <th class="py-4 py-lg-2">訂單編號</th>
+                <td class="text-end font-style-2 py-4 py-lg-2">892746123</td>
 
               </tr>
               <tr>
-                <th scope="row">票券</th>
-                <td class="text-end font-style-2">改頭換面票（含大改造）$8000</td>
+                <th class="py-4 py-lg-2">票券</th>
+                <td class="text-end font-style-2 py-4 py-lg-2">改頭換面票（含大改造）$8000</td>
 
               </tr>
           </table>
 
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center mb-4">
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler圖片" style="width: 32px;height: 32px;" class="mb-4">
-            <h4 class="fw-bold">聯絡人資料</h4>
+            <h4 class="fw-bold">結帳資訊</h4>
           </div>
-          <form action="index.html" class="font-style-2 " >
-            <label for="idnumber" class="mb-2">取票資訊:</label>
-            <input type="text" id="idnumber" name="idnumber" placeholder="請輸入身分證字號或護照號碼" class="w-100 rounded-0 border border-2 fs-5 py-2 px-4 mb-4">
+          <form action="index.html" class="font-style-2" >
+            <label for="idNumber" class="mb-2">取票資訊:</label>
+            <input type="text" id="idNumber" name="idNumber" placeholder="請輸入身分證字號或護照號碼" class="w-100 rounded-0 border border-2 fs-5 py-2 px-4 mb-1">
+            <p class="mb-4">請輸入您的 <span class="text-danger">身分證字號</span>供取票使用，外籍人士請輸入 <span class="text-danger">護照號碼</span></p>
+            <fieldset>
+              <legend class="mb-2">付款方式</legend>
+            
+              <div class="mb-2">
+                <input type="radio" id="credit_card" name="payment_methods" value="信用卡" class="me-2"/>
+                <label for="credit_card">信用卡</label>
+              </div>
+            
+              <div class="mb-5 mb-lg-6">
+                <input type="radio" id="atm" name="payment_methods" value="ATM虛擬帳號" class="me-2"/>
+                <label for="atm">ATM虛擬帳號</label>
+              </div>
+            </fieldset>
             <div class="d-flex flex-column col col-lg-9 mx-auto mb-7 mb-lg-8">
-              <button type="button" class="bg-dark text-light fs-slg fw-bold  py-2 fs-5 mb-4">確認表單資料&nbsp; &raquo;</button>
-              <button type="button" class="bg-primary border-0 fs-slg">取消購票</button>
+              <a href="../pages/outcome.html" class=" fs-5 bg-dark"><button type="button" class="py-2 bg-dark text-light fw-bold w-100 border-0">確認訂單並繳費 $8000&nbsp; &raquo;</button></a>
             </div>
         </form>
 
